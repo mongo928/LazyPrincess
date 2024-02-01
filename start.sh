@@ -3,9 +3,10 @@ then
   echo "Cloning main Repository"
   git clone https://github.com/mongo928/test1.git /LazyPrincess
 else
-  echo "Cloning Custom Repo from $UPSTREAM_REPO "
+  echo "Cloning Custom Repo from $UPSTREAM_REPO"
   git clone $UPSTREAM_REPO /LazyPrincess
 fi
 cd /LazyPrincess
 pip3 install -U -r requirements.txt
-echo "Starting Bot...."
+echo "Starting Bot...." 
+python3 bot.py
