@@ -5,8 +5,8 @@ then
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO"
   git clone $UPSTREAM_REPO /LazyPrincess
-fi
-cd /LazyPrincess
-pip3 install -U -r requirements.txt
-echo "Starting Bot...." 
-python3 bot.py
+if
+  cd /LazyPrincess
+  pip3 install -U -r requirements.txt
+  echo "Starting Bot...." 
+  python3 bot.py
